@@ -7,3 +7,8 @@ export function getLista(){
 export function limpaLista(){
     lista.splice(0);
 }
+export function adicionaItem(item){
+    if(item && item.trim() !== ""){
+        lista.push(item);
+    }
+}
